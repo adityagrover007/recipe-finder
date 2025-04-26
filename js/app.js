@@ -31,21 +31,23 @@ const posts = [
         title: "Healthy Steak",
         description: "Juicy grilled steak with a homemade herb rub - a protein-packed meal that's both delicious and nutritious.",
         link: "https://example.com/slide3",
-        backgroundImage: "img/cheesepizza.jpg",
+        backgroundImage: "img/grill.jpg",
         label: "cookies" // You might want to change this label to "meat" or "main dish"
     },
     {
         title: "Cheese Pizza",
         description: "Classic homemade pizza with stretchy mozzarella, tangy tomato sauce, and a perfectly crispy crust.",
         link: "https://example.com/slide3",
-        backgroundImage: "img/breakfast.jpg",
+        backgroundImage: "img/cheesepizza.jpg",
+        
         label: "pizza"
     },
     {
         title: "Oat Cookies",
         description: "Chewy oatmeal cookies packed with wholesome oats, cinnamon, and your choice of raisins or chocolate chips.",
         link: "https://example.com/slide3",
-        backgroundImage: "img/grill.jpg",
+        backgroundImage: "img/breakfast.jpg",
+       
         label: "cookies"
     }
 ];

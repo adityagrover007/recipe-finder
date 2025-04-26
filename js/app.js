@@ -17,35 +17,35 @@ const posts = [
         title: "Browny Cookies",
         description: "Rich chocolate brownie cookies with fudgy centers and crackly tops - perfect for chocolate lovers!",
         link: "https://example.com/slide1",
-        backgroundImage: "/img/cookies-7.jpg",
+        backgroundImage: "img/cookies-7.jpg",
         label: "cookies"
     },
     {
         title: "Caramel Cookies",
         description: "Buttery cookies stuffed with gooey caramel centers - a sweet and salty treat that melts in your mouth.",
         link: "https://example.com/slide2",
-        backgroundImage: "/img/cookies-6.jpg",
+        backgroundImage: "img/cookies-6.jpg",
         label: "cookies"
     },
     {
         title: "Healthy Steak",
         description: "Juicy grilled steak with a homemade herb rub - a protein-packed meal that's both delicious and nutritious.",
         link: "https://example.com/slide3",
-        backgroundImage: "/img/cheesepizza.jpg",
+        backgroundImage: "img/cheesepizza.jpg",
         label: "cookies" // You might want to change this label to "meat" or "main dish"
     },
     {
         title: "Cheese Pizza",
         description: "Classic homemade pizza with stretchy mozzarella, tangy tomato sauce, and a perfectly crispy crust.",
         link: "https://example.com/slide3",
-        backgroundImage: "/img/breakfast.jpg",
+        backgroundImage: "img/breakfast.jpg",
         label: "pizza"
     },
     {
         title: "Oat Cookies",
         description: "Chewy oatmeal cookies packed with wholesome oats, cinnamon, and your choice of raisins or chocolate chips.",
         link: "https://example.com/slide3",
-        backgroundImage: "/img/grill.jpg",
+        backgroundImage: "img/grill.jpg",
         label: "cookies"
     }
 ];
@@ -164,24 +164,24 @@ const isDarkMode = localStorage.getItem('darkMode') === 'true';
 if (isDarkMode) {
     body.classList.add('dark');
     darkmode.checked = true;
-    logoImage.src = '/img/favicon.png';
-    logoImage2.src = '/img/favicon.png';
+    logoImage.src = 'img/favicon.png';
+    logoImage2.src = 'img/favicon.png';
 } else {
-    logoImage.src = '/img/logo.png';
-    logoImage2.src = '/img/logo.png';
+    logoImage.src = 'img/logo.png';
+    logoImage2.src = 'img/logo.png';
 }
 
 darkmode.addEventListener('change', () => {
     if (darkmode.checked) {
         body.classList.add('dark');
         localStorage.setItem('darkMode', 'true');
-        logoImage.src = '/img/favicon.png';
-        logoImage2.src = '/img/favicon.png';
+        logoImage.src = 'img/favicon.png';
+        logoImage2.src = 'img/favicon.png';
     } else {
         body.classList.remove('dark');
         localStorage.setItem('darkMode', 'false');
-        logoImage.src = '/img/logo.png';
-        logoImage2.src = '/img/logo.png';
+        logoImage.src = 'img/logo.png';
+        logoImage2.src = 'img/logo.png';
     }
 });
 

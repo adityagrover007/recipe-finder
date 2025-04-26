@@ -501,36 +501,60 @@ header {
     font-weight: 600;
 }
 
-.sliderlfbtn button {
-    position: relative;
-    padding: 15px;
-    border: 2px solid #fff;
+
+  
+  :root {
+    --main-color: #85b72c;    /* Your brand color */
+    --arrow-light: #333;      /* Dark for light mode */
+    --arrow-dark: #fff;       /* White for dark mode */
+    --btn-size: 40px;         /* Smaller size as requested */
+  }
+  
+  .sliderlfbtn {
+    display: flex;
+    gap: 10px;                /* Space between buttons */
+    align-items: center;
+    padding-top: 15px;        /* Push buttons downward */
+  }
+  
+  .sliderlfbtn button {
+    /* Structure */
+    width: var(--btn-size);
+    height: var(--btn-size);
+    border: 2px solid var(--arrow-color, var(--arrow-light));
     background: transparent;
-    outline: none;
     border-radius: 50%;
-    margin-right: 5px;
     cursor: pointer;
-}
-
-.sliderlfbtn button::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--main-color);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    transform: scale(0);
-    transition: transform 0.4s ease;
-    z-index: -1;
-}
-
-.sliderlfbtn button:hover::after,
-.sliderlfbtn button:hover {
-    transform: scale(1);
-    border: 2px solid var(--main-color);
-}
+    
+    /* Center icon */
+    display: grid;
+    place-items: center;
+  }
+  
+  /* Arrow/icon styling */
+  .sliderlfbtn button i {
+    font-size: 16px;          /* Smaller arrow size */
+    color: var(--arrow-color, var(--arrow-light));
+  }
+  
+  /* Dark mode adjustment */
+  :root[data-theme="dark"] .sliderlfbtn button {
+    --arrow-color: var(--arrow-dark);
+  }
+  
+  /* Minimal hover effect */
+  .sliderlfbtn button:hover {
+    border-color: var(--main-color);
+  }
+  
+  /* Infinite Micro-Bounce (optional) */
+  @keyframes microBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+  .sliderlfbtn:hover button {
+    animation: microBounce 2s infinite;
+  }
 
 .headercards {
     width: 100%;
@@ -1553,7 +1577,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('/img/subscibebg.jpg') no-repeat left center/cover;
+    background: url('img/subscibebg.jpg') no-repeat left center/cover;
 }
 
 .subscibeinfo {
@@ -1580,12 +1604,25 @@ main {
     flex-direction: column;
 }
 
+:root {
+    --text-color-light: #000000; /* Black for light theme */
+    --text-color-dark: #ffffff; /* White for dark theme */
+    --grover-line-color: var(--text-color-light); /* Default to light theme */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --grover-line-color: var(--text-color-dark);
+    }
+}
+
 .subscibeinfo form label {
     font-size: 25px;
     margin-bottom: 10px;
     font-family: fantasy;
-    color: #fff;
+    color: var(--grover-line-color); /* Uses the theme-based variable */
     letter-spacing: 2px;
+    text-shadow: 0 0 5px rgba(85, 232, 109, 0.3);
 }
 
 .subscibeinfo button {
@@ -1593,7 +1630,7 @@ main {
     padding: 10px 40px;
     background-color: #e25959;
     font-family: var(--font-family);
-    color: #fff;
+    color: #000000;
     border: none;
     border-radius: 10px;
     font-size: 30px;
@@ -1618,9 +1655,21 @@ main {
 .subscibeinfo button:hover::before {
     transform: scale(1);
 }
+/* Light theme (default) - Black text */
+
+
+/* Dark theme - White text */
+@media (prefers-color-scheme: dark) {
+    .author-credit {
+        color: #ffffff;
+    }
+}
 
 
 
+.author-credit {
+    transition: color 0.3s ease;
+}
 /* footer start */
 
 footer {
@@ -1714,3 +1763,5 @@ footer .container {
 .footernav ul li a:hover {
     color: var(--main-color);
 }
+
+

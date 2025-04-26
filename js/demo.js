@@ -17,35 +17,35 @@ const posts = [
         title: "Slide 1 Title",
         description: "Slide 1 Description",
         link: "https://example.com/slide1",
-        backgroundImage: "/img/cookies-7.jpg",
+        backgroundImage: "img/cookies-7.jpg",
         label: "cookies"
     },
     {
         title: "Slide 2 Title",
         description: "Slide 2 Description",
         link: "https://example.com/slide2",
-        backgroundImage: "/img/cookies-6.jpg",
+        backgroundImage: "img/cookies-6.jpg",
         label: "cookies"
     },
     {
         title: "Slide 3 Title",
         description: "Slide 3 Description",
         link: "https://example.com/slide3",
-        backgroundImage: "/img/cheesepizza.jpg",
+        backgroundImage: "img/cheesepizza.jpg",
         label: "cookies"
     },
     {
         title: "Slide 4 Title",
         description: "Slide 3 Description",
         link: "https://example.com/slide3",
-        backgroundImage: "/img/breakfast.jpg",
+        backgroundImage: "img/breakfast.jpg",
         label: "cookies"
     },
     {
         title: "Slide 5 Title",
         description: "Slide 3 Description",
         link: "https://example.com/slide3",
-        backgroundImage: "/img/grill.jpg",
+        backgroundImage: "img/grill.jpg",
         label: "cookies"
     }
 ];
@@ -163,23 +163,23 @@ const isDarkMode = localStorage.getItem('darkMode') === 'true';
 if (isDarkMode) {
     body.classList.add('dark');
     darkmode.checked = true;
-    logoImage.src = '/img/favicon.png';
-    logoImage2.src = '/img/favicon.png';
+    logoImage.src = 'img/favicon.png';
+    logoImage2.src = 'img/favicon.png';
 } else {
-    logoImage.src = '/img/logo.png';
-    logoImage2.src = '/img/logo.png';
+    logoImage.src = 'img/logo.png';
+    logoImage2.src = 'img/logo.png';
 }
 
 darkmode.addEventListener('change', () => {
     if (darkmode.checked) {
         body.classList.add('dark');
         localStorage.setItem('darkMode', 'true');
-        logoImage.src = '/img/favicon.png';
-        logoImage2.src = '/img/favicon.png';
+        logoImage.src = 'img/favicon.png';
+        logoImage2.src = 'img/favicon.png';
     } else {
         body.classList.remove('dark');
         localStorage.setItem('darkMode', 'false');
-        logoImage.src = '/img/logo.png';
-        logoImage2.src = '/img/logo.png';
+        logoImage.src = 'img/logo.png';
+        logoImage2.src = 'img/logo.png';
     }
 });

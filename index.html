@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder Website</title>
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href=" css/style.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <div class="topnav flex">
+            <div class="container flex">
+                <div class="navicons flex">
+                    <a href="http://facebook.com/" target="_blank" title="facebook" rel="noopener noreferrer"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="http://twitter.com/" target="_blank" title="twitter" rel="noopener noreferrer"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="http://linkedin.com/" target="_blank" title="linkedin" rel="noopener noreferrer"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="http://youtube.com/" target="_blank" title="youtube" rel="noopener noreferrer"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="/" class="srbtn">Submit Recipe <i class="fa-solid fa-plus"></i></a>
+            </div>
+        </div>
+        <nav class="mainnav">
+            <div class="container flex">
+                <div class="logo flex">
+                    <img src="img/logo.png" alt="">
+                    <h1>Recipe Finder</h1>
+                </div>
+                <ul class="navlist flex">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Categories</a></li>
+                 
+                    <li><a href="/">Recipes</a></li>
+                    <li><a href="/">Pages</a></li>
+                    <li><a href="/">Contact Us</a></li>
+                </ul>
+                <div class="searchbar flex">
+                    <input type="checkbox" name="check-toggle" id="checkbox" hidden="">
+                    <label for="checkbox" class="toggle">
+                        <div class="toggle__circle"></div>
+                    </label>
+                    <i class="fa-solid fa-magnifying-glass" id="searchopen"></i>
+                    <div class="navonoff">
+                        <input type="checkbox" id="checkbox2">
+                        <label for="checkbox2" class="toggle2">
+                            <div class="bar bar--top"></div>
+                            <div class="bar bar--middle"></div>
+                            <div class="bar bar--bottom"></div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="searchinput">
+                    <input type="text" placeholder="Search Here...">
+                    <i class="fa-solid fa-xmark" id="removesearch"></i>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="headerimg">
+            <div class="container">
+                <div class="headerinfo flex">
+                    <h1 class="headertitle">Browny Cookies</h1>
+                    <p class="headerpera">hey there!</p>
+                    <a href="" class="headerbtn">VIEW RECIPE<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="headerslider container">
+            <div class="slidertitle flex">
+                <h4>My Latest Recipes</h4>
+                <div class="sliderlfbtn">
+                    <button id="sleft"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="sright"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="headercards flex">
+            </div>
+        </section>
+        <section class="threecards container flex">
+            <div class="tcard">
+                <div class="tcardimg">
+                    <img src="/img/post1.jpg" alt="">
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="tcardinfo flex">
+                    <label class="tlabel">Salad</label>
+                    <h2>Sunday Best Fruit Salad</h2>
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>A vibrant mix of seasonal fruits including strawberries, blueberries, kiwi, and mango, tossed with a honey-lime dressing and fresh mint. This refreshing salad is perfect for brunches or as a light, healthy dessert.</p>
+                    <ul class="flex">
+                        <li><i class="fa-solid fa-user"></i>by Chef Aditya</li>
+                        <li><i class="fa-regular fa-clock"></i>10 Mins</li>
+                        <li><i class="fa-regular fa-heart"></i>25 Like</li>
+                    </ul>
+                    <a href="/" class="tcardbtn">Read More</a>
+                </div>
+            </div>
+            <div class="tcard">
+                <div class="tcardimg">
+                    <img src="/img/post2.jpg" alt="">
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="tcardinfo flex">
+                    <label class="tlabel">Dinner</label>
+                    <h2>Lemon Dijon Kale Quinoa</h2>
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>Nutrient-packed quinoa with fresh kale, tossed in a zesty lemon-dijon vinaigrette. Topped with toasted almonds and dried cranberries for a perfect balance of textures and flavors. A wholesome vegetarian main or side dish.</p>
+                    <ul class="flex">
+                        <li><i class="fa-solid fa-user"></i>by Chef Aditya</li>
+                        <li><i class="fa-regular fa-clock"></i>30 Mins</li>
+                        <li><i class="fa-regular fa-heart"></i>5 Like</li>
+                    </ul>
+                    <a href="/" class="tcardbtn">Read More</a>
+                </div>
+            </div>
+            <div class="tcard">
+                <div class="tcardimg">
+                    <img src="/img/post3.jpg" alt="">
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="tcardinfo flex">
+                    <label class="tlabel">Dessert</label>
+                    <h2>Pumpkin Cheesecake</h2>
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>Creamy pumpkin cheesecake with a spiced gingersnap crust, topped with whipped cream and caramel drizzle. This autumn-inspired dessert combines the warmth of pumpkin pie with the richness of classic cheesecake.</p>
+                    <ul class="flex">
+                        <li><i class="fa-solid fa-user"></i>by Chef Aditya</li>
+                        <li><i class="fa-regular fa-clock"></i>55 Mins</li>
+                        <li><i class="fa-regular fa-heart"></i>10 Like</li>
+                    </ul>
+                    <a href="/" class="tcardbtn">Read More</a>
+                </div>
+            </div>
+        </section>
+        <section class="categoriescards container flex">
+            <a href="" class="catecard">
+                <div class="cateimg">
+                    <img src="img/bread.jpg" alt="">
+                </div>
+                <div class="catecardinfo flex">
+                    <span>1 Recipe</span>
+                    <h3>Bread</h3>
+                    <p>Freshly baked artisan breads and quick bread recipes</p>
+                </div>
+            </a>
+            <a href="" class="catecard">
+                <div class="cateimg">
+                    <img src="img/breakfast.jpg" alt="">
+                </div>
+                <div class="catecardinfo flex">
+                    <span>4 Recipes</span>
+                    <h3>Breakfast</h3>
+                    <p>Morning meals to start your day right</p>
+                </div>
+            </a>
+            <a href="" class="catecard">
+                <div class="cateimg">
+                    <img src="img/cookies.jpg" alt="">
+                </div>
+                <div class="catecardinfo flex">
+                    <span>6 Recipe</span>
+                    <h3>Cookies</h3>
+                    <p>Sweet treats for every occasion</p>
+                </div>
+            </a>
+            <a href="" class="catecard">
+                <div class="cateimg">
+                    <img src="img/dessert.jpg" alt="">
+                </div>
+                <div class="catecardinfo flex">
+                    <span>1 Recipe</span>
+                    <h3>Dessert</h3>
+                    <p>Indulgent sweets to satisfy cravings</p>
+                </div>
+            </a>
+            <a href="" class="catecard">
+                <div class="cateimg">
+                    <img src="img/grill.jpg" alt="">
+                </div>
+                <div class="catecardinfo flex">
+                    <span>4 Recipe</span>
+                    <h3>Grill</h3>
+                    <p>Smoky, charred flavors from the grill</p>
+                </div>
+            </a>
+            <a href="" class="catecard">
+                <div class="cateimg">
+                    <img src="img/pasta.jpg" alt="">
+                </div>
+                <div class="catecardinfo flex">
+                    <span>8 Recipe</span>
+                    <h3>Pasta</h3>
+                    <p>Classic and creative noodle dishes</p>
+                </div>
+            </a>
+            <a href="" class="catecard">
+                <div class="cateimg">
+                    <img src="img/quick food.jpg" alt="">
+                </div>
+                <div class="catecardinfo flex">
+                    <span>4 Recipe</span>
+                    <h3>Quick Food</h3>
+                    <p>Fast meals for busy weeknights</p>
+                </div>
+            </a>
+            <a href="" class="catecard">
+                <div class="cateimg">
+                    <img src="img/salad.jpg" alt="">
+                </div>
+                <div class="catecardinfo flex">
+                    <span>1 Recipe</span>
+                    <h3>Salad</h3>
+                    <p>Fresh, crisp, and flavorful combinations</p>
+                </div>
+            </a>
+        </section>
+        <section class="categoriefilter container flex">
+            <div class="filter flex">
+                <div class="filtername">
+                    <div class="flex active">
+                        <i class="fa-solid fa-burger"></i>
+                        <h3>Quick Food</h3>
+                    </div>
+                </div>
+                <div class="filtername">
+                    <div class="flex">
+                        <i class="fa-solid fa-burger"></i>
+                        <h3>Grill</h3>
+                    </div>
+                </div>
+                <div class="filtername">
+                    <div class="flex">
+                        <i class="fa-solid fa-burger"></i>
+                        <h3>Cookies</h3>
+                    </div>
+                </div>
+                <div class="filtername">
+                    <div class="flex">
+                        <i class="fa-solid fa-burger"></i>
+                        <h3>Breakfast</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="filtercards flex">
+                <div class="tcard">
+                    <div class="tcardimg">
+                        <img src="/img/cheesepizza.jpg" alt="">
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="tcardinfo flex">
+                        <label class="tlabel">Pizza</label>
+                        <h2>Cheese Pizza</h2>
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <p>A classic cheese pizza with a crispy crust, tangy tomato sauce, and a perfect blend of mozzarella and parmesan cheeses. Baked to golden perfection with bubbling cheese and a hint of garlic and oregano.</p>
+                        <ul class="flex">
+                            <li><i class="fa-solid fa-user"></i>by Chef Aditya</li>
+                            <li><i class="fa-regular fa-clock"></i>30 Mins</li>
+                            <li><i class="fa-regular fa-heart"></i>42 Like</li>
+                        </ul>
+                        <a href="/" class="catecarbtn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="tcard">
+                    <div class="tcardimg">
+                        <img src="/img/Fries.jpg" alt="">
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="tcardinfo flex">
+                        <label class="tlabel">Appetizer</label>
+                        <h2>Specialty Fries</h2>
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p>Crispy golden fries topped with melted cheese, crispy bacon bits, green onions, and a drizzle of truffle aioli. These loaded fries make the perfect shareable appetizer or indulgent snack.</p>
+                        <ul class="flex">
+                            <li><i class="fa-solid fa-user"></i>by Chef Aditya</li>
+                            <li><i class="fa-regular fa-clock"></i>25 Mins</li>
+                            <li><i class="fa-regular fa-heart"></i>35 Like</li>
+                        </ul>
+                        <a href="/" class="catecarbtn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="tcard">
+                    <div class="tcardimg">
+                        <img src="/img/Alfredo.jpg" alt="">
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="tcardinfo flex">
+                        <label class="tlabel">Pasta</label>
+                        <h2>Fettuccine Alfredo</h2>
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p>Creamy, rich fettuccine alfredo made with fresh pasta, heavy cream, butter, and parmesan cheese. This indulgent dish is finished with freshly ground black pepper and chopped parsley for a restaurant-quality meal at home.</p>
+                        <ul class="flex">
+                            <li><i class="fa-solid fa-user"></i>by Chef Aditya</li>
+                            <li><i class="fa-regular fa-clock"></i>20 Mins</li>
+                            <li><i class="fa-regular fa-heart"></i>28 Like</li>
+                        </ul>
+                        <a href="/" class="catecarbtn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featuredrecipe container flex">
+            <div class="featuredtitles flex">
+                <div class="titleicon">
+                    <img src="img/chef.png" alt="">
+                </div>
+                <h1>Featured Recipes</h1>
+                <p>Discover our most popular and delicious recipes that have been tried, tested, and loved by our community of home cooks. From quick weeknight meals to impressive desserts, we have something for every occasion and skill level.</p>
+            </div>
+            <div class="featuredcards flex">
+                <div class="fcard">
+                    <div class="fcardimg">
+                        <img src="img/cookies-7.jpg" alt="">
+                        <div class="fauthorname flex">
+                            <img src="img/user.png" alt="">
+                            <div class="fauth">
+                                <h5>Recipe Finder</h5>
+                                <p>33 Recipes</p>
+                            </div>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="fcardinfo flex">
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <label>Beginner</label>
+                        <h2>Browny Cookies</h2>
+                        <p>These decadent cookies combine the fudgy texture of brownies with the convenience of cookies. Made with dark chocolate chunks and a hint of espresso, they're perfect for chocolate lovers. Easy enough for beginners but impressive enough for any occasion.</p>
+                        <a href="/" class="fcardbtn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="fcard">
+                    <div class="fcardimg">
+                        <img src="img/cookies-6.jpg" alt="">
+                        <div class="fauthorname flex">
+                            <img src="img/user.png" alt="">
+                            <div class="fauth">
+                                <h5>Recipe Finder</h5>
+                                <p>15 Recipes</p>
+                            </div>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="fcardinfo flex">
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <label>Advanced</label>
+                        <h2>Caramel Cookies</h2>
+                        <p>Buttery shortbread cookies filled with gooey caramel centers and sprinkled with sea salt. This advanced recipe requires careful temperature control but rewards you with perfectly balanced sweet-salty cookies that melt in your mouth.</p>
+                        <a href="/" class="fcardbtn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="fcard">
+                    <div class="fcardimg">
+                        <img src="img/steak-food.jpg" alt="">
+                        <div class="fauthorname flex">
+                            <img src="img/user.png" alt="">
+                            <div class="fauth">
+                                <h5>Recipe Finder</h5>
+                                <p>23 Recipes</p>
+                            </div>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="fcardinfo flex">
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <label>Intermediate</label>
+                        <h2>Healthy Steak</h2>
+                        <p>Lean flank steak marinated in garlic, lime, and spices, then grilled to perfection. Served with roasted vegetables and a fresh herb chimichurri sauce. This protein-packed meal proves that healthy eating can still be flavorful and satisfying.</p>
+                        <a href="/" class="fcardbtn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gfbg">
+            <div class="container flex">
+                <div class="greenworld flex">
+                    <img src="img/greenworld.png" alt="">
+                    <div class="gfinfo">
+                        <span>Vegan</span>
+                        <h1>Green World</h1>
+                        <p>Explore our collection of plant-based recipes that are as nutritious as they are delicious. From vibrant salads to hearty mains, discover how satisfying vegan cooking can be.</p>
+                        <a href="/">CLICK HERE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="fruitworld flex">
+                    <img src="img/fruity-world.png" alt="">
+                    <div class="gfinfo">
+                        <span>Desserts</span>
+                        <h1>Fruity World</h1>
+                        <p>Indulge in our fruit-forward desserts that highlight nature's sweetness. From berry tarts to tropical sorbets, these treats are perfect for any occasion.</p>
+                        <a href="/">CLICK HERE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="breackfastsec container flex">
+            <div class="leftsidesec">
+                <div class="leftboxtitle">
+                    <h1>Enjoy Breakfast</h1>
+                    <p>Start your day right with our collection of breakfast recipes ranging from quick weekday options to luxurious weekend brunch ideas. All recipes are designed to fuel your morning with delicious flavors.</p>
+                </div>
+                <div class="leftposts flex">
+                    <div class="tcard">
+                        <div class="tcardimg">
+                            <img src="/img/cookies-7.jpg" alt="">
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="tcardinfo flex">
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <label class="tlabel">Cookies</label>
+                            <h2>Wheat Cookies</h2>
+                            <p>Whole wheat cookies sweetened with honey and studded with dark chocolate chips. These healthier cookies provide fiber and antioxidants while still satisfying your sweet tooth.</p>
+                            <a href="/" class="catecarbtn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="tcard">
+                        <div class="tcardimg">
+                            <img src="/img/cookies-6.jpg" alt="">
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="tcardinfo flex">
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <label class="tlabel">Cookies</label>
+                            <h2>Oatmeal Raisin Cookies</h2>
+                            <p>Classic oatmeal raisin cookies with a chewy center and crisp edges. Packed with rolled oats, plump raisins, and warm cinnamon spice - the ultimate comfort cookie.</p>
+                            <a href="/" class="catecarbtn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="tcard">
+                        <div class="tcardimg">
+                            <img src="/img/steak-food.jpg" alt="">
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="tcardinfo flex">
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <label class="tlabel">Protein</label>
+                            <h2>Healthy Steak</h2>
+                            <p>Lean cut steak seasoned simply with sea salt and black pepper, cooked to medium-rare perfection. Served with a side of roasted vegetables for a balanced, protein-rich meal.</p>
+                            <a href="/" class="catecarbtn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="tcard">
+                        <div class="tcardimg">
+                            <img src="/img/cheesepizza.jpg" alt="">
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="tcardinfo flex">
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <label class="tlabel">Pizza</label>
+                            <h2>Cheese Pizza</h2>
+                            <p>Simple yet perfect cheese pizza with homemade dough, San Marzano tomato sauce, and a blend of fresh mozzarella and aged parmesan. Baked in a hot oven for that authentic pizzeria flavor.</p>
+                            <a href="/" class="catecarbtn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="youradvertise">
+                    <h1>Place Your Advertisemenst Here</h1>
+                </div>
+            </div>
+            <div class="rightsidesec">
+                <div class="aboutsec">
+                    <h3 class="tdesign">About Me</h3>
+                    <div class="aboutbox">
+                        <img src="/img/aditya.jpg" alt="">
+                        
+                        <p>I'm a BCA student passionate about coding and cooking. This platform blends my love for technology and food, offering easy, delicious recipes with a tech-friendly twist. When I'm not debugging code, I'm experimenting in the kitchen—baking, grilling, or exploring global flavors. Let’s make cooking smarter and tastier together! 🚀🍕</p>
+                    </div>
+                </div>
+                <div class="toprecipe">
+                    <h3 class="tdesign">My Top Recipes</h3>
+                    <div class="topreciposts flex">
+                        <a href="/" class="trpost">
+                            <img src="/img/cookies-7.jpg" alt="">
+                            <div class="trpostinfo">
+                                <h4>Browny Cookies</h4>
+                                <p>By <span>Chef John</span></p>
+                            </div>
+                        </a>
+                        <a href="/" class="trpost">
+                            <img src="/img/cookies-6.jpg" alt="">
+                            <div class="trpostinfo">
+                                <h4>Caramel Cookies</h4>
+                                <p>By <span>Chef Aditya</span></p>
+                            </div>
+                        </a>
+                        <a href="/" class="trpost">
+                            <img src="/img/steak-food.jpg" alt="">
+                            <div class="trpostinfo">
+                                <h4>Healthy Steak</h4>
+                                <p>By <span>Chef Chris</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="followme">
+                    <h3 class="tdesign">Follow Me</h3>
+                    <div class="followcards flex">
+                        <a href="/" class="socicard">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <h5>FACEBOOK</h5>
+                            <i class="fa-solid fa-plus"></i>
+                            <p>FOLLOW</p>
+                        </a>
+                        <a href="/" class="socicard">
+                            <i class="fa-brands fa-twitter"></i>
+                            <h5>TWITTER</h5>
+                            <i class="fa-solid fa-plus"></i>
+                            <p>FOLLOW</p>
+                        </a>
+                        <a href="/" class="socicard">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <h5>LINKEDIN</h5>
+                            <i class="fa-solid fa-plus"></i>
+                            <p>FOLLOW</p>
+                        </a>
+                        <a href="/" class="socicard">
+                            <i class="fa-brands fa-youtube"></i>
+                            <h5>YOUTUBE</h5>
+                            <i class="fa-solid fa-plus"></i>
+                            <p>FOLLOW</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscribeme">
+            <div class="subscibeinfo">
+                <h1>Food Recipe Finder</h1>
+                <p>Get all My Latest Recipes By Scrolling</p>
+                <form action="https://www.youtube.com/@codingwebstudio/codingwebstudio?sub_confirmation=1" method="get"
+                    target="_blank">
+                    <input type="hidden" name="sub_confirmation" value="1">
+                    <label for="name">Made by Aditya Grover</label>
+                    <button type="submit"></button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container flex">
+            <div class="footer flex">
+                <div class="footerlogo">
+                    <h1>Recipe Finder</h1>
+                    <p>I provide new recipes with a twist on daily basis. I also post blog posts about fun ideas to do
+                        in
+                        the kitchen</p>
+                    <div class="fsocial">
+                        <a href="http://facebook.com/" target="_blank" title="facebook" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="http://twitter.com/" target="_blank" title="twitter" rel="noopener noreferrer"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="http://linkedin.com/" target="_blank" title="linkedin" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="http://youtube.com/" target="_blank" title="youtube" rel="noopener noreferrer"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footernav">
+                    <h3>Recipes</h3>
+                    <ul class="flex">
+                        <li><a href="/">Breakfast</a></li>
+                        <li><a href="/">Desserts</a></li>
+                        <li><a href="/">Dinner</a></li>
+                        <li><a href="/">Dairy</a></li>
+                    </ul>
+                </div>
+                <div class="footernav">
+                    <h3>Legal</h3>
+                    <ul class="flex">
+                        <li><a href="/">Privacy Policy</a></li>
+                        <li><a href="/">Refund Policy</a></li>
+                        <li><a href="/">Cookie Policy</a></li>
+                        <li><a href="/">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex">
+                <h5>&copy; 2025 Recipe Finder All Rights Reserverd</h5>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
